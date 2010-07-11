@@ -14,3 +14,7 @@ maybe you'll have to do it 2 or 3 times, and you should see that some rows are n
 
 If anyone can help us to find and fix this bug, I'll appreciate.
 Thanks guys
+
+
+NB: I've noticed that this issue occurred under iOS4 but never on my iPod Touch device under OS 3.1.3.
+
