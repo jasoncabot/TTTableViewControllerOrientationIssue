@@ -10,7 +10,7 @@ To reproduce this error make again the following steps:
 
 maybe you'll have to do it 2 or 3 times, and you should see that some rows are not correctly rendered.
 
-[![](http://mapolitique.fr/outils/three20/TTTableViewControllerOrientationIssueCapture.png)](http://mapolitique.fr/outils/three20/TTTableViewControllerOrientationIssueCapture.png)
+[![](http://mapolitique.fr/outils/three20/TTTableViewControllerOrientationIssueCapture_thumbnail.png)](http://mapolitique.fr/outils/three20/TTTableViewControllerOrientationIssueCapture.png)
 
 If anyone can help us to find and fix this bug, I'll appreciate.
 Thanks guys
