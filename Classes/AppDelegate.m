@@ -1,0 +1,43 @@
+//
+//  TTTableViewControllerOrientationIssueAppDelegate.m
+//  TTTableViewControllerOrientationIssue
+//
+//  Created by Pierre Dulac on 11.07.10.
+//  Copyright __MyCompanyName__ 2010. All rights reserved.
+//
+
+#import "AppDelegate.h"
+
+#import "RootViewController.h"
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+@implementation AppDelegate
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+  TTNavigator* navigator = [TTNavigator navigator];
+
+  TTURLMap* map = navigator.URLMap;
+  [map from:@"app://root" toViewController:[RootViewController class]];
+
+  [navigator openURLAction:[TTURLAction actionWithURLPath:@"app://root"]];
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (BOOL)navigator:(TTNavigator*)navigator shouldOpenURL:(NSURL*)URL {
+  return YES;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (BOOL)application:(UIApplication*)application handleOpenURL:(NSURL*)URL {
+  [[TTNavigator navigator] openURLAction:[TTURLAction actionWithURLPath:URL.absoluteString]];
+  return YES;
+}
+
+
+@end
