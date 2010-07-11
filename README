@@ -1,0 +1,14 @@
+A minimal project to show an new error in the Three20 project introducted by the iOS4.
+
+To reproduce this error make again the following steps:
+
+1. lauch the sample app
+2. turn the iphone in landscape orientation
+3. select a row
+4. turn the iphone in portrait mode
+5. go back to the previous controller
+
+maybe you'll have to do it 2 or 3 times, and you should see that some rows are not correctly rendered.
+
+If anyone can help us to find and fix this bug, I'll appreciate.
+Thanks guys
