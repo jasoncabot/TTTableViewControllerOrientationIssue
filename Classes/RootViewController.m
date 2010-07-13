@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "SampleDataSource.h"
 
 
 @implementation RootViewController
@@ -20,7 +21,7 @@
 			[items addObject:[TTTableTextItem itemWithText:[NSString stringWithFormat:@"item %d", i] URL:@"app://root"]];
 		}
 		
-		self.dataSource = [TTListDataSource dataSourceWithItems:items];
+		self.dataSource = [SampleDataSource dataSourceWithItems:items];
 	}
 	return self;
 }
